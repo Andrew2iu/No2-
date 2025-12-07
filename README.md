@@ -12,29 +12,13 @@
 -   **路由管理**: Vue Router
 -   **HTTP 请求**: Axios
 -   **富文本编辑器**: Vue-Quill-Editor
--   配置了生产环境的 CDN 外部资源引入，减少打包体积
--   使用路由懒加载优化初始加载速度
--   通过 Vue CLI 配置实现了灵活的开发与生产环境构建
-
-### 7. 表单验证与用户体验
-
--   集成 Element UI 表单验证功能，提供友好的错误提示
--   响应式设计，适配不同屏幕尺寸
--   统一的错误处理机制，提升用户体验
+-   **构建工具**: Vue CLI
+-   **持久化存储**: vuex-persistedstate
 
 ## 功能特性
 
 -   ✅ 用户登录与注册
 -   ✅ 文章分类管理（添加、编辑、删除）
-支持文章分类的添加、编辑、删除功能，实现了分类与文章的关联管理。
-
-### 6. 状态持久化
-
-使用 vuex-persistedstate 实现 Vuex 状态持久化，确保用户登录状态等关键数据在页面刷新后不丢失。
-
-### 7. 表单验证与用户体验
-
-集成 Element UI 表单验证功能，提供友好的错误提示，优化用户操作体验。
 -   ✅ 文章管理（发布、编辑、删除、预览）
 -   ✅ 用户信息管理
 -   ✅ 用户密码修改
@@ -81,11 +65,9 @@ src/
 npm install
 
 # 使用yarn
+yarn install
 ```
 
-yarn install
-
-````
 ### 开发环境运行
 
 ```bash
@@ -93,10 +75,8 @@ yarn install
 npm run serve
 
 # 使用yarn
-
-````
-
 yarn serve
+```
 
 ### 生产环境构建
 
@@ -105,8 +85,7 @@ yarn serve
 npm run build
 
 # 使用yarn
-### Compiles and minifies for production
-
+yarn build
 ```
 
 ### 代码检查
@@ -116,11 +95,6 @@ npm run build
 npm run lint
 
 # 使用yarn
-
-### Lints and fixes files
-
-### 自定义配置
-
 yarn lint
 
 ## API 接口说明
@@ -184,8 +158,8 @@ MIT License
 -   Element UI 团队
 -   Quill 团队
 
-```
 
-### Customize configuration
+### 自定义配置
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+```
